@@ -17,7 +17,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter{
 
     OidcClientInitiatedLogoutSuccessHandler oidcLogoutSuccessHandler() { 
         OidcClientInitiatedLogoutSuccessHandler successHandler = new OidcClientInitiatedLogoutSuccessHandler(clientRegistrationRepository);
-        successHandler.setPostLogoutRedirectUri(URI.create("http://localhost:8080/"));
+        successHandler.setPostLogoutRedirectUri(URI.create("https://issuer-gateway-production.up.railway.app/"));
         return successHandler;
     }
 
