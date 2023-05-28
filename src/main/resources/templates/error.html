@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: aliceblue;
+			margin: 0;
+			padding: 0;
+		}
+
+		.container {
+			max-width: 600px;
+			margin: 0 auto;
+			padding: 20px;
+			text-align: center;
+			background-color: #fff;
+			border: 1px solid #ddd;
+			border-radius: 5px;
+			margin-top: 50px;
+		}
+
+		h1 {
+			color: #333;
+		}
+
+		p {
+			margin-top: 10px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<h1>404</h1>
+		<h1 th:text="${errorMessage}"></h1>
+		<p><a href="#" onclick="goBack()" class="btn btn-danger">Go BACK To HOME</a></p>
+	</div>
+
+	<script>
+		function goBack() {
+			window.location.href = "/issuer-gateway/home";
+		}
+	</script>
+</body>
+
+</html>

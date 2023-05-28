@@ -1,0 +1,15 @@
+body {
+    background-color: aliceblue;
+    padding: 20px;
+}
+
+.img-centered {
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+}
+
+.col-sm-4 a:hover img {
+    border-color: #1e2898;
+    /* Change the border color to your desired color */
+}
